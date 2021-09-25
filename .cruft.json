@@ -1,6 +1,6 @@
 {
   "template": "https://github.com/bbugyi200/cc-python",
-  "commit": "1ebd5a1078e56809dcd7a459599ad2de175a6d59",
+  "commit": "1b3473e96dea6b6021937c26b25b8839faf301c2",
   "checkout": null,
   "context": {
     "cookiecutter": {
@@ -11,6 +11,7 @@
       "git_repo_name": "logutils",
       "package_name": "logutils",
       "pypi_package_name": "pylogutils",
+      "read_the_docs_domain": "pylogutils",
       "package_description": "Better logging made easy with support for structlog and the standard logging module.",
       "package_type": "library",
       "_template": "https://github.com/bbugyi200/cc-python",
