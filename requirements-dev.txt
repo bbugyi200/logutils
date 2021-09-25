@@ -22,6 +22,8 @@ binaryornot==0.4.4
     # via cookiecutter
 black==21.9b0
     # via -r requirements-dev.in
+bugyi.lib==0.2.1
+    # via -r requirements.in
 bump2version==1.0.1
     # via -r requirements-dev.in
 certifi==2021.5.30
@@ -37,6 +39,8 @@ click==7.1.2
     #   cruft
     #   pip-tools
     #   typer
+colorama==0.4.4
+    # via -r requirements.in
 colored==1.4.2
     # via syrupy
 cookiecutter==1.7.3
@@ -57,6 +61,8 @@ filelock==3.0.12
     #   tox
     #   virtualenv
 flake8==3.9.2
+    # via -r requirements-dev.in
+freezegun==1.1.0
     # via -r requirements-dev.in
 gitdb==4.0.7
     # via gitpython
@@ -81,6 +87,8 @@ jinja2-time==0.2.0
     # via cookiecutter
 lazy-object-proxy==1.6.0
     # via astroid
+loguru==0.5.3
+    # via bugyi.lib
 m2r2==0.3.1
     # via -r requirements-dev.in
 markupsafe==2.0.1
@@ -126,6 +134,8 @@ py==1.10.0
     #   tox
 pycodestyle==2.7.0
     # via flake8
+pydantic==1.8.2
+    # via -r requirements.in
 pydocstyle[toml]==6.1.1
     # via -r requirements-dev.in
 pyflakes==2.3.1
@@ -147,7 +157,9 @@ pytest-cov==2.12.1
 pytest-mock==3.6.1
     # via -r requirements-dev.in
 python-dateutil==2.8.2
-    # via arrow
+    # via
+    #   bugyi.lib
+    #   freezegun
 python-slugify==5.0.2
     # via cookiecutter
 pytz==2021.1
@@ -193,6 +205,8 @@ sphinxcontrib-qthelp==1.0.3
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
+structlog==21.1.0
+    # via -r requirements.in
 syrupy==1.4.5
     # via -r requirements-dev.in
 text-unidecode==1.3
@@ -221,12 +235,15 @@ typeguard==2.12.1
     # via -r requirements-dev.in
 typer==0.3.2
     # via cruft
+types-freezegun==1.1.0
+    # via -r requirements-dev.in
 typing-extensions==3.10.0.2
     # via
     #   astroid
     #   black
     #   gitpython
     #   mypy
+    #   pydantic
     #   pylint
 urllib3==1.26.7
     # via requests
