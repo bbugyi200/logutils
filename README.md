@@ -13,8 +13,8 @@ project status badges:
 
 version badges:
 
-[![Project Version](https://img.shields.io/pypi/v/logutils)](https://pypi.org/project/logutils/)
-[![Python Versions](https://img.shields.io/pypi/pyversions/logutils)](https://pypi.org/project/logutils/)
+[![Project Version](https://img.shields.io/pypi/v/pylogutils)](https://pypi.org/project/pylogutils/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/pylogutils)](https://pypi.org/project/pylogutils/)
 [![Cookiecutter: cc-python](https://img.shields.io/static/v1?label=cc-python&message=2021.09.23-2&color=d4aa00&logo=cookiecutter&logoColor=d4aa00)](https://github.com/bbugyi200/cc-python)
 [![Docker: bbugyi/python](https://img.shields.io/static/v1?label=bbugyi%20%2F%20python&message=2021.09.22-6&color=8ec4ad&logo=docker&logoColor=8ec4ad)](https://github.com/bbugyi200/docker-python)
 
@@ -53,11 +53,11 @@ miscellaneous tools used to maintain this project:
 
 ## Installation 🗹
 
-To install `logutils` using [pip][9], run the following
+To install `pylogutils` using [pip][9], run the following
 commands in your terminal:
 
 ``` shell
-python3 -m pip install --user logutils  # install logutils
+python3 -m pip install --user pylogutils  # install logutils
 ```
 
 If you don't have pip installed, this [Python installation guide][10] can guide
