@@ -1,0 +1,21 @@
+{
+  "template": "https://github.com/bbugyi200/cc-python",
+  "commit": "a304ebea2a079ed3940d844d3cbdc5e58c1152fd",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "author": "Bryan M Bugyi",
+      "email": "bryanbugyi34@gmail.com",
+      "github_username": "bbugyi200",
+      "git_org_name": "bbugyi200",
+      "git_repo_name": "logutils",
+      "package_name": "logutils",
+      "pypi_package_name": "pylogutils",
+      "package_description": "Better logging made easy with support for structlog and the standard logging module.",
+      "package_type": "library",
+      "_template": "https://github.com/bbugyi200/cc-python",
+      "package_path": "logutils"
+    }
+  },
+  "directory": null
+}
