@@ -9,7 +9,7 @@ project status badges:
 [![CI Workflow](https://github.com/bbugyi200/logutils/actions/workflows/ci.yml/badge.svg)](https://github.com/bbugyi200/logutils/actions/workflows/ci.yml)
 [![Coverage](https://codecov.io/gh/bbugyi200/logutils/branch/master/graph/badge.svg)](https://codecov.io/gh/bbugyi200/logutils)
 [![Documentation Status](https://readthedocs.org/projects/pylogutils/badge/?version=latest)](https://pylogutils.readthedocs.io/en/latest/?badge=latest)
-[![Package Health](https://snyk.io/advisor/python/logutils/badge.svg)](https://snyk.io/advisor/python/logutils)
+[![Package Health](https://snyk.io/advisor/python/pylogutils/badge.svg)](https://snyk.io/advisor/python/pylogutils)
 
 version badges:
 
