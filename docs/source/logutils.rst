@@ -13,3 +13,4 @@ Submodules
    :maxdepth: 4
 
    logutils.api
+   logutils.pytest_plugin
