@@ -1,6 +1,6 @@
 # name: test_init_logging__LOGFILE[0]
   '
-  15:45:03.585 [info     ] Logging to files.              [__init__] logfiles=['<REMOVED_FOR_TESTING>']
+  15:45:03.585 [info     ] Logging to files.              [api] logfiles=['<REMOVED_FOR_TESTING>']
   15:45:03.585 [info     ] Hi there                       [struct_test_1] e=2 z=3
   15:45:03.585 [error    ] Hi there                       [struct_test_1] e=2 z=3
   15:45:03.585 [info     ] Hi there                       [struct_test_2] e=2 z=3
@@ -14,7 +14,7 @@
 ---
 # name: test_init_logging__LOGFILE[0].1
   '
-  {"event": "Logging to files.", "fargs": {"logs": ["Log(file='stderr', format='nocolor', level='INFO')", "Log(file='<REMOVED_FOR_TESTING>', format='json', level='DEBUG')"], "verbose": 0}, "function": "fake_function", "level": "info", "lineno": "123", "logfiles": ["<REMOVED_FOR_TESTING>"], "logger": "__init__", "module": "fake_module", "pid": 12345, "thread": "MainThread", "timestamp": "2021-09-06T15:45:03.585481Z"}
+  {"event": "Logging to files.", "fargs": {"logs": ["Log(file='stderr', format='nocolor', level='INFO')", "Log(file='<REMOVED_FOR_TESTING>', format='json', level='DEBUG')"], "verbose": 0}, "function": "fake_function", "level": "info", "lineno": "123", "logfiles": ["<REMOVED_FOR_TESTING>"], "logger": "api", "module": "fake_module", "pid": 12345, "thread": "MainThread", "timestamp": "2021-09-06T15:45:03.585481Z"}
   {"e": 2, "event": "Hi there", "fargs": {"a": 1, "b": 2, "c": 3}, "function": "fake_function", "level": "debug", "lineno": "123", "logger": "struct_test_1", "module": "fake_module", "pid": 12345, "thread": "MainThread", "timestamp": "2021-09-06T15:45:03.585481Z", "z": 3}
   {"e": 2, "event": "Hi there", "fargs": {"a": 1, "b": 2, "c": 3}, "function": "fake_function", "level": "info", "lineno": "123", "logger": "struct_test_1", "module": "fake_module", "pid": 12345, "thread": "MainThread", "timestamp": "2021-09-06T15:45:03.585481Z", "z": 3}
   {"e": 2, "event": "Hi there", "fargs": {"a": 1, "b": 2, "c": 3}, "function": "fake_function", "level": "error", "lineno": "123", "logger": "struct_test_1", "module": "fake_module", "pid": 12345, "thread": "MainThread", "timestamp": "2021-09-06T15:45:03.585481Z", "z": 3}
@@ -47,7 +47,7 @@
       'logfiles': <class 'list'> [
         '<REMOVED_FOR_TESTING>',
       ],
-      'logger': '__init__',
+      'logger': 'api',
       'module': 'fake_module',
       'pid': 12345,
       'thread': 'MainThread',
@@ -252,7 +252,7 @@
 ---
 # name: test_init_logging__LOGFILE[1]
   '
-  15:45:03.585481 [info     ] Logging to files.              [__init__] logfiles=['<REMOVED_FOR_TESTING>'] pid=12345 thread=MainThread
+  15:45:03.585481 [info     ] Logging to files.              [api] logfiles=['<REMOVED_FOR_TESTING>'] pid=12345 thread=MainThread
   15:45:03.585481 [info     ] Hi there                       [struct_test_1] e=2 pid=12345 thread=MainThread z=3
   15:45:03.585481 [error    ] Hi there                       [struct_test_1] e=2 pid=12345 thread=MainThread z=3
   15:45:03.585481 [info     ] Hi there                       [struct_test_2] e=2 pid=12345 thread=MainThread z=3
@@ -266,7 +266,7 @@
 ---
 # name: test_init_logging__LOGFILE[1].1
   '
-  {"event": "Logging to files.", "fargs": {"logs": ["Log(file='stderr', format='nocolor', level='INFO')", "Log(file='<REMOVED_FOR_TESTING>', format='json', level='DEBUG')"], "verbose": 1}, "function": "fake_function", "level": "info", "lineno": "123", "logfiles": ["<REMOVED_FOR_TESTING>"], "logger": "__init__", "module": "fake_module", "pid": 12345, "thread": "MainThread", "timestamp": "2021-09-06T15:45:03.585481Z"}
+  {"event": "Logging to files.", "fargs": {"logs": ["Log(file='stderr', format='nocolor', level='INFO')", "Log(file='<REMOVED_FOR_TESTING>', format='json', level='DEBUG')"], "verbose": 1}, "function": "fake_function", "level": "info", "lineno": "123", "logfiles": ["<REMOVED_FOR_TESTING>"], "logger": "api", "module": "fake_module", "pid": 12345, "thread": "MainThread", "timestamp": "2021-09-06T15:45:03.585481Z"}
   {"e": 2, "event": "Hi there", "fargs": {"a": 1, "b": 2, "c": 3}, "function": "fake_function", "level": "debug", "lineno": "123", "logger": "struct_test_1", "module": "fake_module", "pid": 12345, "thread": "MainThread", "timestamp": "2021-09-06T15:45:03.585481Z", "z": 3}
   {"e": 2, "event": "Hi there", "fargs": {"a": 1, "b": 2, "c": 3}, "function": "fake_function", "level": "info", "lineno": "123", "logger": "struct_test_1", "module": "fake_module", "pid": 12345, "thread": "MainThread", "timestamp": "2021-09-06T15:45:03.585481Z", "z": 3}
   {"e": 2, "event": "Hi there", "fargs": {"a": 1, "b": 2, "c": 3}, "function": "fake_function", "level": "error", "lineno": "123", "logger": "struct_test_1", "module": "fake_module", "pid": 12345, "thread": "MainThread", "timestamp": "2021-09-06T15:45:03.585481Z", "z": 3}
@@ -299,7 +299,7 @@
       'logfiles': <class 'list'> [
         '<REMOVED_FOR_TESTING>',
       ],
-      'logger': '__init__',
+      'logger': 'api',
       'module': 'fake_module',
       'pid': 12345,
       'thread': 'MainThread',
@@ -504,7 +504,7 @@
 ---
 # name: test_init_logging__LOGFILE[2]
   '
-  2021-09-06T15:45:03.585481Z [info     ] Logging to files.              [__init__] fargs={'logs': [Log(file='stderr', format='nocolor', level='INFO'), Log(file='<REMOVED_FOR_TESTING>', format='json', level='DEBUG')], 'verbose': 2} function=fake_function lineno=123 logfiles=['<REMOVED_FOR_TESTING>'] module=fake_module pid=12345 thread=MainThread
+  2021-09-06T15:45:03.585481Z [info     ] Logging to files.              [api] fargs={'logs': [Log(file='stderr', format='nocolor', level='INFO'), Log(file='<REMOVED_FOR_TESTING>', format='json', level='DEBUG')], 'verbose': 2} function=fake_function lineno=123 logfiles=['<REMOVED_FOR_TESTING>'] module=fake_module pid=12345 thread=MainThread
   2021-09-06T15:45:03.585481Z [info     ] Hi there                       [struct_test_1] e=2 fargs={'a': 1, 'b': 2, 'c': 3} function=fake_function lineno=123 module=fake_module pid=12345 thread=MainThread z=3
   2021-09-06T15:45:03.585481Z [error    ] Hi there                       [struct_test_1] e=2 fargs={'a': 1, 'b': 2, 'c': 3} function=fake_function lineno=123 module=fake_module pid=12345 thread=MainThread z=3
   2021-09-06T15:45:03.585481Z [info     ] Hi there                       [struct_test_2] e=2 fargs={'a': 1, 'b': 2, 'c': 3} function=fake_function lineno=123 module=fake_module pid=12345 thread=MainThread z=3
@@ -518,7 +518,7 @@
 ---
 # name: test_init_logging__LOGFILE[2].1
   '
-  {"event": "Logging to files.", "fargs": {"logs": ["Log(file='stderr', format='nocolor', level='INFO')", "Log(file='<REMOVED_FOR_TESTING>', format='json', level='DEBUG')"], "verbose": 2}, "function": "fake_function", "level": "info", "lineno": "123", "logfiles": ["<REMOVED_FOR_TESTING>"], "logger": "__init__", "module": "fake_module", "pid": 12345, "thread": "MainThread", "timestamp": "2021-09-06T15:45:03.585481Z"}
+  {"event": "Logging to files.", "fargs": {"logs": ["Log(file='stderr', format='nocolor', level='INFO')", "Log(file='<REMOVED_FOR_TESTING>', format='json', level='DEBUG')"], "verbose": 2}, "function": "fake_function", "level": "info", "lineno": "123", "logfiles": ["<REMOVED_FOR_TESTING>"], "logger": "api", "module": "fake_module", "pid": 12345, "thread": "MainThread", "timestamp": "2021-09-06T15:45:03.585481Z"}
   {"e": 2, "event": "Hi there", "fargs": {"a": 1, "b": 2, "c": 3}, "function": "fake_function", "level": "debug", "lineno": "123", "logger": "struct_test_1", "module": "fake_module", "pid": 12345, "thread": "MainThread", "timestamp": "2021-09-06T15:45:03.585481Z", "z": 3}
   {"e": 2, "event": "Hi there", "fargs": {"a": 1, "b": 2, "c": 3}, "function": "fake_function", "level": "info", "lineno": "123", "logger": "struct_test_1", "module": "fake_module", "pid": 12345, "thread": "MainThread", "timestamp": "2021-09-06T15:45:03.585481Z", "z": 3}
   {"e": 2, "event": "Hi there", "fargs": {"a": 1, "b": 2, "c": 3}, "function": "fake_function", "level": "error", "lineno": "123", "logger": "struct_test_1", "module": "fake_module", "pid": 12345, "thread": "MainThread", "timestamp": "2021-09-06T15:45:03.585481Z", "z": 3}
@@ -551,7 +551,7 @@
       'logfiles': <class 'list'> [
         '<REMOVED_FOR_TESTING>',
       ],
-      'logger': '__init__',
+      'logger': 'api',
       'module': 'fake_module',
       'pid': 12345,
       'thread': 'MainThread',
@@ -756,7 +756,7 @@
 ---
 # name: test_init_logging__LOGFILE[3]
   '
-  2021-09-06T15:45:03.585481Z [info     ] Logging to files.              [__init__] fargs={'logs': [Log(file='stderr', format='nocolor', level='INFO'), Log(file='<REMOVED_FOR_TESTING>', format='json', level='DEBUG')], 'verbose': 3} function=fake_function lineno=123 logfiles=['<REMOVED_FOR_TESTING>'] module=fake_module pid=12345 thread=MainThread
+  2021-09-06T15:45:03.585481Z [info     ] Logging to files.              [api] fargs={'logs': [Log(file='stderr', format='nocolor', level='INFO'), Log(file='<REMOVED_FOR_TESTING>', format='json', level='DEBUG')], 'verbose': 3} function=fake_function lineno=123 logfiles=['<REMOVED_FOR_TESTING>'] module=fake_module pid=12345 thread=MainThread
   2021-09-06T15:45:03.585481Z [info     ] Hi there                       [struct_test_1] e=2 fargs={'a': 1, 'b': 2, 'c': 3} function=fake_function lineno=123 module=fake_module pid=12345 thread=MainThread z=3
   2021-09-06T15:45:03.585481Z [error    ] Hi there                       [struct_test_1] e=2 fargs={'a': 1, 'b': 2, 'c': 3} function=fake_function lineno=123 module=fake_module pid=12345 thread=MainThread z=3
   2021-09-06T15:45:03.585481Z [info     ] Hi there                       [struct_test_2] e=2 fargs={'a': 1, 'b': 2, 'c': 3} function=fake_function lineno=123 module=fake_module pid=12345 thread=MainThread z=3
@@ -770,7 +770,7 @@
 ---
 # name: test_init_logging__LOGFILE[3].1
   '
-  {"event": "Logging to files.", "fargs": {"logs": ["Log(file='stderr', format='nocolor', level='INFO')", "Log(file='<REMOVED_FOR_TESTING>', format='json', level='DEBUG')"], "verbose": 3}, "function": "fake_function", "level": "info", "lineno": "123", "logfiles": ["<REMOVED_FOR_TESTING>"], "logger": "__init__", "module": "fake_module", "pid": 12345, "thread": "MainThread", "timestamp": "2021-09-06T15:45:03.585481Z"}
+  {"event": "Logging to files.", "fargs": {"logs": ["Log(file='stderr', format='nocolor', level='INFO')", "Log(file='<REMOVED_FOR_TESTING>', format='json', level='DEBUG')"], "verbose": 3}, "function": "fake_function", "level": "info", "lineno": "123", "logfiles": ["<REMOVED_FOR_TESTING>"], "logger": "api", "module": "fake_module", "pid": 12345, "thread": "MainThread", "timestamp": "2021-09-06T15:45:03.585481Z"}
   {"e": 2, "event": "Hi there", "fargs": {"a": 1, "b": 2, "c": 3}, "function": "fake_function", "level": "debug", "lineno": "123", "logger": "struct_test_1", "module": "fake_module", "pid": 12345, "thread": "MainThread", "timestamp": "2021-09-06T15:45:03.585481Z", "z": 3}
   {"e": 2, "event": "Hi there", "fargs": {"a": 1, "b": 2, "c": 3}, "function": "fake_function", "level": "info", "lineno": "123", "logger": "struct_test_1", "module": "fake_module", "pid": 12345, "thread": "MainThread", "timestamp": "2021-09-06T15:45:03.585481Z", "z": 3}
   {"e": 2, "event": "Hi there", "fargs": {"a": 1, "b": 2, "c": 3}, "function": "fake_function", "level": "error", "lineno": "123", "logger": "struct_test_1", "module": "fake_module", "pid": 12345, "thread": "MainThread", "timestamp": "2021-09-06T15:45:03.585481Z", "z": 3}
@@ -803,7 +803,7 @@
       'logfiles': <class 'list'> [
         '<REMOVED_FOR_TESTING>',
       ],
-      'logger': '__init__',
+      'logger': 'api',
       'module': 'fake_module',
       'pid': 12345,
       'thread': 'MainThread',
@@ -1088,7 +1088,7 @@
 ---
 # name: test_restricted_keys
   '
-  2021-09-06T15:45:03.585481Z [warning  ] Restricted key cannot be bound. [__init__] bad_key=pid fargs={'self': <BetterBoundLogger(context={}, processors=[<function add_logger_name>, <structlog.stdlib.PositionalArgumentsFormatter object>, <structlog.processors.StackInfoRenderer object>, <function format_exc_info>, <structlog.processors.UnicodeDecoder object>, <function ProcessorFormatter.wrap_for_formatter>])>, 'new_values': {'pid': 12345, 'good_key': "'Only this key should bind to the logger.'"}, '__class__': <class 'logutils.api.BetterBoundLogger'>} function=fake_function lineno=123 module=fake_module pid=12345 thread=MainThread
+  2021-09-06T15:45:03.585481Z [warning  ] Restricted key cannot be bound. [api] bad_key=pid fargs={'self': <BetterBoundLogger(context={}, processors=[<function add_logger_name>, <structlog.stdlib.PositionalArgumentsFormatter object>, <structlog.processors.StackInfoRenderer object>, <function format_exc_info>, <structlog.processors.UnicodeDecoder object>, <function ProcessorFormatter.wrap_for_formatter>])>, 'new_values': {'pid': 12345, 'good_key': "'Only this key should bind to the logger.'"}, '__class__': <class 'logutils.api.BetterBoundLogger'>} function=fake_function lineno=123 module=fake_module pid=12345 thread=MainThread
   2021-09-06T15:45:03.585481Z [info     ] Test INFO log message.         [restricted_keys] function=fake_function good_key='Only this key should bind to the logger.' lineno=123 module=fake_module pid=12345 thread=MainThread
   
   '
