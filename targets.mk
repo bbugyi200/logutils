@@ -153,7 +153,6 @@ dev-shell: sync-dev-requirements  ## Launch a bash shell with the python environ
 	($(SOURCE_VENV) bash)
 
 .PHONY: clean
-clean: docs-clean
 clean: ## Remove build artifacts.
 	$(RM) -r build/*
 	$(RM) MANIFEST
@@ -163,5 +162,6 @@ clean: ## Remove build artifacts.
 	$(RM) -r .mypy_cache
 	$(RM) -r $(package).egg-info
 	$(RM) -r $(VENV)
+	$(RM) -r .tox
 	find . -type d -name '__pycache__' -exec rm -rf {} +
 	find . -type f -name '*.pyc' -exec rm -rf {} +
