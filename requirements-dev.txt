@@ -22,10 +22,8 @@ binaryornot==0.4.4
     # via cookiecutter
 black==21.9b0
     # via -r requirements-dev.in
-bugyi.lib==0.3.0
-    # via
-    #   -r requirements.in
-    #   pylogutils
+bugyi.lib==0.4.0
+    # via -r requirements.in
 bump2version==1.0.1
     # via -r requirements-dev.in
 certifi==2021.5.30
@@ -42,9 +40,7 @@ click==7.1.2
     #   pip-tools
     #   typer
 colorama==0.4.4
-    # via
-    #   -r requirements.in
-    #   pylogutils
+    # via -r requirements.in
 colored==1.4.2
     # via syrupy
 cookiecutter==1.7.3
@@ -79,7 +75,6 @@ imagesize==1.2.0
 importlib-metadata==4.8.1
     # via
     #   backports.entry-points-selectable
-    #   bugyi.lib
     #   flake8
     #   pep517
     #   pluggy
@@ -129,7 +124,7 @@ pep517==0.11.0
     # via pip-tools
 pip-tools==6.3.0
     # via -r requirements-dev.in
-platformdirs==2.3.0
+platformdirs==2.4.0
     # via
     #   black
     #   pylint
@@ -147,10 +142,7 @@ py==1.10.0
 pycodestyle==2.7.0
     # via flake8
 pydantic==1.8.2
-    # via
-    #   -r requirements.in
-    #   bugyi.lib
-    #   pylogutils
+    # via -r requirements.in
 pydocstyle[toml]==6.1.1
     # via -r requirements-dev.in
 pyflakes==2.3.1
@@ -159,8 +151,6 @@ pygments==2.10.0
     # via sphinx
 pylint==2.11.1
     # via -r requirements-dev.in
-pylogutils==0.1.1
-    # via bugyi.lib
 pyparsing==2.4.7
     # via packaging
 pytest==6.2.5
@@ -223,9 +213,7 @@ sphinxcontrib-qthelp==1.0.3
 sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
 structlog==21.1.0
-    # via
-    #   -r requirements.in
-    #   pylogutils
+    # via -r requirements.in
 syrupy==1.4.5
     # via -r requirements-dev.in
 text-unidecode==1.3
