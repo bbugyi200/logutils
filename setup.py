@@ -56,6 +56,6 @@ setup(
     test_suite="tests",
     tests_require=tests_require(),
     url="https://github.com/bbugyi200/logutils",
-    use_scm_version={"fallback_version": "0.1.3"},
+    use_scm_version={"fallback_version": "0.1.4"},
     zip_safe=False,
 )
