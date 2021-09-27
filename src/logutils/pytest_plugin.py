@@ -5,7 +5,7 @@ This plugin can be enabled via the `pytest_plugins` conftest.py variable.
 Examples:
     The following line should be found in the "tests/conftest.py" file:
 
-    pytest_plugins = ["logutils.pytest_plugin"]
+    >>> pytest_plugins = ["logutils.pytest_plugin"]
 """
 
 from pytest import fixture
