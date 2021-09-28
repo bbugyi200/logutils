@@ -9,7 +9,7 @@ __email__ = "bryanbugyi34@gmail.com"
 __version__ = "0.1.4"
 
 
-from logutils.logutils import (
+from .logutils import (
     BetterBoundLogger,
     Log,
     LogFormat,
