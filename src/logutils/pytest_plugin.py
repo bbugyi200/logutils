@@ -1,6 +1,8 @@
 """A pytest plugin for testing the logutils package.
 
-This plugin can be enabled via the `pytest_plugins` conftest.py variable.
+This plugin can be enabled via the `pytest_plugins` conftest.py variable. This
+allows us to use this plugin in external packages' tests instead of just for
+this package's tests.
 
 Examples:
     The following line should be found in the "tests/conftest.py" file:
