@@ -12,5 +12,5 @@ Submodules
 .. toctree::
    :maxdepth: 4
 
-   logutils.api
+   logutils.logutils
    logutils.pytest_plugin
