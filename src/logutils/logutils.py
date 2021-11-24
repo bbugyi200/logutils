@@ -40,6 +40,7 @@ Examples:
     >>> log = logger.bind_fargs(locals())
 """
 
+from dataclasses import dataclass
 from inspect import getframeinfo, getmodule
 import logging
 import logging.config
@@ -60,7 +61,6 @@ from typing import (
 
 from bugyi.lib.meta import scriptname
 from bugyi.lib.types import Final, Literal
-from pydantic.dataclasses import dataclass
 import structlog
 from structlog._frames import _find_first_app_frame_and_name
 from structlog.processors import TimeStamper
